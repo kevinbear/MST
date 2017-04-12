@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int readnum(char G)
+int readnum(int G)
 {
 	FILE *fp, *fp2, *fp3;
 	int ch;
@@ -31,7 +31,7 @@ int readnum(char G)
 	return ch;
 }
 
-int* readfile(int* T, char G)
+int* readfile(int* T, int G)
 {
 	FILE *fp, *fp2, *fp3;
 	int temp, i = 0;
