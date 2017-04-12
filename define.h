@@ -3,5 +3,5 @@
 #include <stdlib.h>
 #include <iostream>
 
-int readnum(char G);
-int* readfile(int* T, char G);
+int readnum(int G);
+int* readfile(int* T, int G);
