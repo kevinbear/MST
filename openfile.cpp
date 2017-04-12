@@ -21,6 +21,10 @@ int readnum(char G)
 		ch = getc(fp3);
 		break;
 	default:
+		puts("========================");
+		printf("did't have this graph\n");
+		system("pause");
+		exit (1);
 		break;
 	}
 	ch -= 48;
@@ -100,6 +104,9 @@ int* readfile(int* T, char G)
 		}
 		break;
 	default:
+		printf("did't have this graph\n");
+		system("pause");
+		exit (1);
 		break;
 	}
 	return T;
