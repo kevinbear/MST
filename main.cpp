@@ -16,7 +16,7 @@ SORT *para = NULL;
 int checktable(int, SORT*);
 int* T = NULL, *V_W = NULL, *E = NULL;
 int r_c, next_vertex, connect = 0, edge_count = 0;
-char g, v;
+int g, v;
 
 int main()
 {
@@ -96,8 +96,8 @@ int checktable(int arg, SORT* para)
 {
 	int temp = 0, vtemp = 0, flag;
 	//======refresh vertex_weigth table======//
-	for (int j = 0; j < r_c; j++) //¦s©ñweigth¶iV_W »P sortarray
-		if (V_W[j] > T[(arg - 1)* r_c + j] && T[(arg - 1)* r_c + j] != 0) //¨Ï¥Î¤W0¬°¤w«ô³X ¸ê®Æ0¬°¥¼³s±µ
+	for (int j = 0; j < r_c; j++) //å­˜æ”¾weigthé€²V_W èˆ‡ sortarray
+		if (V_W[j] > T[(arg - 1)* r_c + j] && T[(arg - 1)* r_c + j] != 0) //ä½¿ç”¨ä¸Š0ç‚ºå·²æ‹œè¨ª è³‡æ–™0ç‚ºæœªé€£æŽ¥
 			V_W[j] = T[(arg - 1) * r_c + j];
 	//=======================================//
 
